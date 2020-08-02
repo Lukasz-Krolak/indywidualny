@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+  <link href="dist/the-datepicker.css" rel="stylesheet" />
+
   <link href="src\images" rel="stylesheet">
 </head>
 <body>
   <div class="top-bar">
     <button class="top-bar-btn"><img src="src\images\icons\wallet.svg">$1,500.00 <img src="src\images\icons\arrow-down-small.svg"></button>
-    <button class="top-bar-btn"></button>
+    <button class="top-bar-btn"><i class="far fa-bell"></i></button>
     <button class="top-bar-btn"></button>
     <button class="top-bar-btn"></button>
 
   </div>
-  <div class="side-bar col-sm-1 ">
+  <div class="side-bar col-sm-1">
     <div class="title">
       <h1 class="just">Just do it</h1>
       <button class="hamburger"><i class="fas fa-bars">hbhbhj</i></button>
@@ -36,7 +40,27 @@
     </div>
   </div>
   <div class="general">
+    <div>
+    <h1> GENERAL STATISTIC</h1>
+    </div>
+    <form>
+      <div class="date-picker">
+        <input type="text" id="datepicker">
+      </div>
+    </form>
+    
 
+
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="modal" id="myModal">
+      <div class="btn-close js--close-modal">x</div>
+  
+      <h4>Witaj w modalu!</h4>
+      <p>Lorem ipsum dolor sit amet...</p>
+  
+      <button class="js--close-modal">Okay</button>
+    </div>
   </div>
   <div class="links">
 
@@ -44,4 +68,7 @@
 
   <p>hello</p>
 </body>
+  <script src="dist/the-datepicker.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js" type="module"></script>
 </html>
