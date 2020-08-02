@@ -1,0 +1,15 @@
+//sass/_variables.scss – tutaj będziemy definiować wszystkie zmienne dotyczące projektu takie jak kolory, wielkości, czcionki oraz inne standaryzacje,
+$color-titles: white;
+$color-disactive: gray;
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  color: $color-titles;
+  font-size: medium;
+  .just{
+  font-family: 'Sedgwick Ave', cursive;
+  }
+}
