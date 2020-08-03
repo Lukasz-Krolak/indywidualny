@@ -67,6 +67,7 @@ li {
   color: $color-titles;
   font-size: 20px;
   display: inline-block;
+  margin: auto;
   .just{
   font-family: 'Sedgwick Ave', cursive;
   }
@@ -78,12 +79,15 @@ li {
   border-radius: 50%;
 }
 .hamburger {
-    width: 40px;
+    width: 20px;
     height: 20px;
+    padding-left: 30px;
     border: 0;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid $color-one;
     background: transparent;
     position: relative;
+    margin-top: 32px; 
+    margin-left: 20px;
 }
 .hamburger::before, .hamburger::after {
   content: '';
@@ -91,15 +95,15 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 5px solid #ffffff;
-  transform: translateY(7px);
+  border-top: 2px solid $color-one;
+  transform: translateY(9px);
 }
 .hamburger::after {
-  transform: translateY(10px);
+  transform: translateY(20px);
 }
 
 .user {
-  border-top: 2px;
+  border-top: 2px solid;
   border-color: $color-one;
   font-family: $font-family-one;
   font-size: 20px;
