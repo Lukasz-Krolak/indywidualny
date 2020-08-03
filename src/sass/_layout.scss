@@ -27,7 +27,7 @@ li {
     width: 160px;
     display: inline-block;
 
-    button {
+    a {
       border: none;
       padding: 6px 8px 6px 16px;
       width: 100%;
@@ -54,6 +54,7 @@ li {
   position: fixed;
   display: flex;
   justify-content: right;
+  background-color: slateblue;
 }
 .scroll-wrapper {
   display: block;
@@ -82,6 +83,10 @@ li {
 .col-sm-3 {
   flex: 0 0 25%;
   max-width: 25%;
+}
+.col-sm-10 {
+  flex: 0 0 91%;
+  max-width: 91%;
 }
 @for $i from 1 through 12 {
   .col-sm-#{$i} {
