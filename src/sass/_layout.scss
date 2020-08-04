@@ -26,7 +26,7 @@ li {
     max-height: 20px;
   }
 }
-nav {
+nav.y-list {
   margin-left: 3px;
   ul {
     border-bottom: 2px;
@@ -42,8 +42,6 @@ nav {
       border-left: 2px solid transparent;
       i {
         padding-right: 15px;
-      
-
       }
     }
     li:hover {
@@ -51,14 +49,41 @@ nav {
       background-color: #282828;
       border-left: 2px solid $color-three;
     } 
-
+  }
+}
+nav.x-list {
+  
+  height: 60px;
+  ul {
+    text-align: end;
+    border-left: 2px;
+    border-color: $color-one;
+    padding: 0;
+    margin: 0;
+    li {
+      font-family: $font-family-one;
+      display: inline-block;
+      height: 100%;
+      float: inline-end;
+      text-decoration: none;
+      color: $color-one;
+      font-size: 20px;
+      text-align: left;
+      padding: 12px;
+      font-family: $font-family-one;
+      border-left: 2px solid $color-five;
+      i {
+        padding: 5px;
+      }
+    }
   }
 }
 
 .topbar {
+  border-bottom: 2px solid $color-five;
   position: fixed;
-  height: 50px;
-  background: red;
+  height: 60px;
+  background: $color-titles;
   width: calc(100% - 188px);
   left: 188px;
 }
