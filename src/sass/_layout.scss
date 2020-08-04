@@ -17,6 +17,7 @@ li {
 }
 .sidebar {
   width: 188px;
+  top: 0;
   position: fixed;
   background: black;
   height: 100vh;
@@ -32,6 +33,7 @@ nav.y-list {
     border-bottom: 2px;
     border-color: $color-one;
     padding: 0;
+    
     li {
       text-decoration: none;
       color: $color-one;
@@ -58,6 +60,7 @@ nav.x-list {
     text-align: end;
     border-left: 2px;
     border-color: $color-one;
+    height: 100%;
     padding: 0;
     margin: 0;
     li {
@@ -66,13 +69,21 @@ nav.x-list {
       height: 100%;;
       text-decoration: none;
       color: $color-one;
-      font-size: 20px;
       text-align: left;
       padding: 12px;
       font-family: $font-family-one;
       border-left: 2px solid $color-five;
       i {
-        padding: 5px;
+        vertical-align: -webkit-baseline-middle;
+        padding: 10px;
+        transform: translateY(-50%);
+      }
+      .span-one {
+        font-size: 12px;  
+      }
+      span {
+        transform: translateY(-50%);
+        font-size: 18px;
       }
     }
   }
@@ -80,40 +91,12 @@ nav.x-list {
 
 .topbar {
   border-bottom: 2px solid $color-five;
+  top: 0;
   position: fixed;
   height: 60px;
   background: $color-titles;
   width: calc(100% - 188px);
   left: 188px;
-}
-.con {
-  width: calc(100% - 188px);
-  background: blueviolet;
-  margin-left: 188px;
-  margin-top: 200px;
-}
-.content {
-  width: calc(100% - 188px);
-  background: blueviolet;
-  margin-left: 188px;
-}
-.container-fluid {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.title {
-  color: $color-titles;
-  font-size: 20px;
-  display: inline-block;
-  margin: auto;
-  .just{
-  font-family: 'Sedgwick Ave', cursive;
-    p {
-      font: 20px;
-      margin: auto;
-    }
-  }
 }
 .avatar-image {
   vertical-align: middle;
@@ -159,8 +142,47 @@ nav.x-list {
     font-size: 15px;
     margin-left: 10px;
   }
-
 }
+//content
+.con {
+  width: calc(100% - 188px); 
+  margin-left: 188px;
+  margin-top: 75px;
+}
+.content {
+  width: calc(100% - 188px);
+  margin-left: 188px;
+}
+.container-fluid {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 17px;
+  margin-right: 88px;;
+}
+.form-title {
+  font-family: $font-family-one;
+  font-size: 18px;
+  color: $color-one;
+  height: 50px;
+  background-color: cadetblue;
+}
+.title {
+  color: $color-titles;
+  font-size: 20px;
+  display: inline-block;
+  margin: auto;
+  .just{
+  font-family: 'Sedgwick Ave', cursive;
+    p {
+      font: 20px;
+      margin: auto;
+    }
+  }
+}
+
 //modale
 * {
   box-sizing: border-box;
