@@ -63,8 +63,7 @@ nav.x-list {
     li {
       font-family: $font-family-one;
       display: inline-block;
-      height: 100%;
-      float: inline-end;
+      height: 100%;;
       text-decoration: none;
       color: $color-one;
       font-size: 20px;
@@ -87,7 +86,12 @@ nav.x-list {
   width: calc(100% - 188px);
   left: 188px;
 }
-
+.con {
+  width: calc(100% - 188px);
+  background: blueviolet;
+  margin-left: 188px;
+  margin-top: 200px;
+}
 .content {
   width: calc(100% - 188px);
   background: blueviolet;
