@@ -16,15 +16,18 @@ li {
   flex-wrap: wrap;
 }
 .sidebar {
-  width: 280px;
+  width: 188px;
   position: fixed;
   background: black;
   height: 100vh;
   .title { 
     display: inline-flex;
     background-color: $color-two;
-    max-height: 50px;
+    max-height: 20px;
   }
+}
+nav {
+  margin-left: 3px;
   ul {
     border-bottom: 2px;
     border-color: $color-one;
@@ -32,16 +35,23 @@ li {
     li {
       text-decoration: none;
       color: $color-one;
-      font-size: 20px;
+      font-size: 15px;
       text-align: left;
-      padding: 16px;
+      padding: 12px;
       font-family: $font-family-one;
+      border-left: 2px solid transparent;
       i {
         padding-right: 15px;
       
 
       }
     }
+    li:hover {
+      color: $color-titles; 
+      background-color: #282828;
+      border-left: 2px solid $color-three;
+    } 
+
   }
 }
 
@@ -49,14 +59,14 @@ li {
   position: fixed;
   height: 50px;
   background: red;
-  width: calc(100% - 280px);
-  left: 280px;
+  width: calc(100% - 188px);
+  left: 188px;
 }
 
 .content {
-  width: calc(100% - 280px);
+  width: calc(100% - 188px);
   background: blueviolet;
-  margin-left: 280px;
+  margin-left: 188px;
 }
 .container-fluid {
   width: 100%;
@@ -70,46 +80,55 @@ li {
   margin: auto;
   .just{
   font-family: 'Sedgwick Ave', cursive;
+    p {
+      font: 20px;
+      margin: auto;
+    }
   }
 }
 .avatar-image {
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .hamburger {
     width: 20px;
     height: 20px;
-    padding-left: 30px;
     border: 0;
     border-top: 2px solid $color-one;
     background: transparent;
     position: relative;
-    margin-top: 32px; 
-    margin-left: 20px;
+    margin-top: 22px; 
+    margin-left: 50px;
 }
 .hamburger::before, .hamburger::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 20px;
   border-top: 2px solid $color-one;
-  transform: translateY(9px);
+  transform: translateY(6px);
 }
 .hamburger::after {
-  transform: translateY(20px);
+  transform: translateY(13px);
 }
 
 .user {
   border-top: 2px solid;
   border-color: $color-one;
   font-family: $font-family-one;
-  font-size: 20px;
   color: $color-four;
+  margin-left: 3px;
   h3 {
     color: $color-one;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  span {
+    font-size: 15px;
+    margin-left: 10px;
   }
 
 }
