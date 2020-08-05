@@ -49,7 +49,7 @@ nav.y-list {
     li:hover {
       color: $color-titles; 
       background-color: #282828;
-      border-left: 2px solid $color-three;
+      border-left: 4px solid $color-three;
     } 
   }
 }
@@ -65,30 +65,32 @@ nav.x-list {
     margin: 0;
     li {
       font-family: $font-family-one;
-      display: inline-block;
+      display: inline-flex;
       height: 100%;;
       text-decoration: none;
       color: $color-one;
       text-align: left;
+      align-items: center;
       padding: 12px;
       font-family: $font-family-one;
       border-left: 2px solid $color-five;
       i {
+        display: flex;
+        align-items: center;
         vertical-align: -webkit-baseline-middle;
         padding: 10px;
-        transform: translateY(-50%);
       }
       .span-one {
         font-size: 12px;  
       }
       span {
-        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
         font-size: 18px;
       }
     }
   }
 }
-
 .topbar {
   border-bottom: 2px solid $color-five;
   top: 0;
@@ -148,6 +150,10 @@ nav.x-list {
   width: calc(100% - 188px); 
   margin-left: 188px;
   margin-top: 75px;
+
+}
+.general {
+  box-shadow: 0px 0px 20px 0px $color-shadow;
 }
 .content {
   width: calc(100% - 188px);
@@ -155,19 +161,18 @@ nav.x-list {
 }
 .container-fluid {
   width: 100%;
-  padding: 10px;
-  box-shadow: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: 17px;
   margin-right: 88px;;
 }
 .form-title {
+  border-bottom: 2px solid $color-five;
   font-family: $font-family-one;
   font-size: 18px;
   color: $color-one;
-  height: 50px;
-  background-color: cadetblue;
+  height: 30px;
+  p{
+    padding-left: 15px;
+  }
 }
 .title {
   color: $color-titles;
