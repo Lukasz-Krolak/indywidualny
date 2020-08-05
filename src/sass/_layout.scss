@@ -53,7 +53,7 @@ nav.y-list {
     } 
   }
 }
-nav.x-list {
+.x-list {
   
   height: 60px;
   ul {
@@ -90,6 +90,14 @@ nav.x-list {
       }
     }
   }
+}
+.callendar {
+  margin: 10px;
+    ul{
+      text-align: center;
+      border: 2px $color-one;
+    }
+  
 }
 .topbar {
   border-bottom: 2px solid $color-five;
