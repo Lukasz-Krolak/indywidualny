@@ -6,10 +6,14 @@ function initChart(){
   // eslint-disable-next-line no-unused-vars
  
   const chart = new Chart(ctx, {
-  // 1
+    console.log("chart",chart);
+    
+    // 1
+  
     type: 'bar',
     data: {
-    // 2
+        
+      // 2
       labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
       // 3
       datasets: [{
@@ -35,6 +39,9 @@ function initChart(){
         // 7
         hidden: true,
       }]
+      
     },
+    
   });
+  
 }
