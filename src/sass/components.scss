@@ -17,8 +17,7 @@
   background-color: $color-two;
   max-height: 20px;
 }
-.sidebar-list {
-  
+nav.topbar-list {
   height: 60px;
   ul {
     text-align: end;
@@ -55,8 +54,7 @@
     }
   }
 }
-.topbar-list {
-  
+.sidebar-list {
   height: 60px;
   ul {
     text-align: end;
@@ -150,44 +148,12 @@ transform: translateY(13px);
     margin-left: 10px;
   }
 }
-.callendar {
-  display: flex;
-  margin: 10px;
-  justify-content: center;
-  ul {
-    text-align: center;
-    border: 1px solid #e3e3e3;
-    border-radius: 2px;
-    padding: 5px 0;
-    margin-top: 20px;
-    height: 40px;
-    width: 320px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    li {
-      padding: 0;
-      border-left: 1px solid $color-five;
-      span {
-        font-size: 15px;
-        
-      }
-      i {
-        padding: 0;
-        padding-left: 20px;
-      }
-    }
-    .first-span {
-      border: none;
-    }
-  }
-  .button-refresh {
-    align-items: center;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    color: $color-titles;
-    background-color: $color-three;
-  }
+.button-refresh {
+  align-items: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color: $color-titles;
+  background-color: $color-three;
 }
