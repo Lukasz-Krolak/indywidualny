@@ -16,13 +16,51 @@
   background-color: $color-two;
   max-height: 20px;
 }
-
+.textarea {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 20px;
+  span {
+    display: flex;
+    width: 50px;
+    flex: 50%;
+    justify-content: center;
+    p {
+      
+      width: 25%;
+      text-align: end;
+      border-bottom: 1px solid $color-five;
+    }
+    .left {
+      text-align: start;
+      color: $color-one;
+    }
+  }
+}
+.form-title {
+  border-bottom: 1px solid $color-five;
+  font-family: $font-family-one;
+  font-size: 18px;
+  color: $color-one;
+  height: 30px;
+  p{
+    padding-left: 15px;
+  }
+}
+.chart-title {
+  border: none;
+  font-size: 15px;
+  width: 30%;
+  text-align: end;
+  color: $color-one;
+}
 .callendar {
   padding: 50px 10px;
   border-bottom: 1px solid $color-five;
   justify-content: center;
   display: flex;
-  
   i {
     display: flex;
     align-items: center;
@@ -32,9 +70,8 @@
   .icon-calendar {
     color: $color-one;
     transform: translateY(8%);
+    z-index: -1;
   }
-  
-
   .date-input {
     border: 1px solid $color-five;
     border-radius: 2px;
