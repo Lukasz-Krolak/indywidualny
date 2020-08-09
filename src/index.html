@@ -13,19 +13,19 @@
 </head>
 <body>
   <div class="sidebar">
-    <header class="title row container-fluid ">
+    <header class="title container-fluid ">
       <p class="just col-sm-2">Just do it</p>
       <button class="hamburger"></button>
     </header>
     <nav class="sidebar-list">
       <ul>
-        <li><i class="icon-general"></i>General</li>
-        <li><i class="icon-details"></i>Details</li>
-        <li><i class="icon-links"></i>Links</li>
-        <li><i class="icon-banners"></i>Banners</li>
-        <li><i class="icon-personaldata"></i>Personal data</li>
-        <li><i class="icon-payout"></i>Payout</li>
-        <li><i class="icon-postback"></i>Postback</li>
+        <li><i class="icon-general"></i><span>General</span></li>
+        <li><i class="icon-details"></i><span>Details</span></li>
+        <li><i class="icon-links"></i><span>Links</span></li>
+        <li><i class="icon-banners"></i><span>Banners</span></li>
+        <li><i class="icon-personaldata"></i><span>Personal data</span></li>
+        <li><i class="icon-payout"></i><span>Payout</span></li>
+        <li><i class="icon-postback"></i><span>Postback</span></li>
       </ul>
     </nav>
     <div class="user">
@@ -52,12 +52,23 @@
       <div class="callendar">
         <div class="date-input">
           <input type="text" placeholder="16.05.2016">
-          <input type="text" placeholder="16.05.2016">
+          <input class="second-date" type="text" placeholder="16.05.2016">
           <i class="icon-calendar"></i>
         </div>
-        <i class="icon-refresh button-refresh"></i>
+        <div class="button-refresh">
+          <i class="icon-refresh"></i>
+        </div>
+      </div>
+      <div class="textarea">
+        <table>
+          <tr><span><p>Visit Signups</p><p>124</p></span></tr>
+          <tr><span><p>FTD</p><p>445</p></span></tr>
+          <tr><span><p>Net deposit</p><p>564</p></span></tr>
+          <tr><span><p>Turn over</p> <p>432</p></span></tr>
+        </table>
       </div>
       <div class="chart">
+        <p>Earning chart</p>
         <canvas id="myChart" ></canvas>
       </div>
     </div>

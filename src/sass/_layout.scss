@@ -1,8 +1,11 @@
 //sass/_layout.scss – plik z gridem oraz domyślnymi klasami pomocniczymi dla niego,
 body {
   font-family: $font-family-one;
-  font-weight: 357;
+  font-weight: 300;
   font-size: 15px;
+}
+.border {
+  border-color: $color-five;
 }
 i {
   font-family: 'Glyphter';
@@ -29,86 +32,9 @@ li {
   position: fixed;
   background: black;
   height: 100vh;
-  .title { 
-    display: inline-flex;
-    background-color: $color-two;
-    max-height: 20px;
-  }
-}
-nav.sidebar-list {
-  margin-left: 3px;
-  ul {
-    border-bottom: 2px;
-    border-color: $color-one;
-    padding: 0;
-    
-    li {
-      text-decoration: none;
-      color: $color-one;
-      text-align: left;
-      padding: 12px;
-      border-left: 2px solid transparent;
-      i {
-        padding-right: 15px;
-      }
-    }
-    li:hover {
-      color: $color-titles; 
-      background-color: #282828;
-      border-left: 4px solid $color-three;
-    } 
-  }
-}
-nav.topbar-list {
-  height: 60px;
-  ul {
-    text-align: end;
-    border-left: 2px;
-    border-color: #818181;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    li {
-      display: inline-flex;
-      height: 100%;;
-      text-decoration: none;
-      color: $color-one;
-      text-align: left;
-      align-items: center;
-      padding: 12px;
-      border-left: 2px solid $color-five;
-      i {
-        display: flex;
-        align-items: center;
-        vertical-align: -webkit-baseline-middle;
-        padding: 10px;
-      }
-      .span-one {
-        font-size: 12px;  
-      }
-      span {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-      }
-    }
-  }
 }
 .chart {
   width: 80%;
-  .chartjs-hidden-iframe {
-
-    
-   display: block; 
-   overflow: hidden; 
-   border: 0px; 
-   margin: 0px; 
-   height: 100%; 
-   width: 158px; 
-   position: absolute; 
-   pointer-events: none; 
-   z-index: -1;
-  }
 }
 .user h3 {
   color: $color-one;
@@ -116,14 +42,7 @@ nav.topbar-list {
   margin-top: 30px;
   margin-left: 10px;
 }
-.callendar {
-  display: flex;
-  margin: 10px;
-}
-.date-input {
-  border: 1px solid $color-one;
-  border-radius: 2px;
-}
+
 .topbar {
   border-bottom: 2px solid $color-five;
   top: 0;
@@ -139,28 +58,7 @@ nav.topbar-list {
   height: 40px;
   border-radius: 50%;
 }
-.hamburger {
-    width: 20px;
-    height: 20px;
-    border: 0;
-    border-top: 2px solid $color-one;
-    background: transparent;
-    position: relative;
-    margin-top: 22px; 
-    margin-left: 50px;
-}
-.hamburger::before, .hamburger::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  border-top: 2px solid $color-one;
-  transform: translateY(6px);
-}
-.hamburger::after {
-  transform: translateY(13px);
-}
+
 .user {
   border-top: 2px solid;
   border-color: $color-one;
@@ -209,15 +107,7 @@ nav.topbar-list {
 .title {
   color: $color-titles;
   font-size: 20px;
-  display: inline-block;
-  margin: auto;
-  .just{
-  font-family: 'Sedgwick Ave', cursive;
-    p {
-      font: 20px;
-      margin: auto;
-    }
-  }
+  display: inline-flex;
 }
 //modale
 * {

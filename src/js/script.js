@@ -2,11 +2,10 @@ initChart();
 function initChart(){
   const ctx = document.getElementById('myChart').getContext('2d');
 
+
   // eslint-disable-next-line no-undef
-  // eslint-disable-next-line no-unused-vars
- 
-  const chart = new Chart(ctx, {
-    console.log("chart",chart);
+  new Chart(ctx, {
+    
     
     // 1
   

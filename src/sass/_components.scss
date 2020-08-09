@@ -1,6 +1,6 @@
 // sass/components – katalog z plikami źródłowymi styli każdego komponentu (za chwilę wyjaśnimi czym są komponenty),
 @import "variables";
-@import "layout";
+
 * {
   box-sizing: border-box;
 }
@@ -13,9 +13,69 @@
   padding-right: 15px;
 }
 .sidebar.title { 
-  display: inline-flex;
   background-color: $color-two;
   max-height: 20px;
+}
+
+.callendar {
+  padding: 50px 10px;
+  border-bottom: 1px solid $color-five;
+  justify-content: center;
+  display: flex;
+  
+  i {
+    display: flex;
+    align-items: center;
+    vertical-align: -webkit-baseline-middle;
+    padding: 10px;
+  }
+  .icon-calendar {
+    color: $color-one;
+    transform: translateY(8%);
+  }
+  
+
+  .date-input {
+    border: 1px solid $color-five;
+    border-radius: 2px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    height: 40px;
+    input{
+      border: none;
+      font-size: 15px;
+    }
+    .second-date {
+      border-left: 2px solid $color-five;
+      padding-left: 15px;
+    }
+  }
+}
+.button-refresh {
+  align-items: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color: $color-titles;
+  background-color: $color-three;
+  margin-left: 10px;
+  i {
+    // position: absolute;
+    display: flex;
+    align-items: center;
+    vertical-align: -webkit-baseline-middle;
+    padding: 10px;
+  }
+}
+.just{
+  font-family: 'Sedgwick Ave', cursive;
+  p {
+    font-size: 20px;
+    margin: auto;
+    margin-left: 20px;
+  }
 }
 nav.topbar-list {
   height: 60px;
@@ -24,7 +84,6 @@ nav.topbar-list {
     border-left: 2px;
     border-color: #818181;
     height: 100%;
-    padding: 0;
     margin: 0;
     li {
       font-family: $font-family-one;
@@ -55,30 +114,34 @@ nav.topbar-list {
   }
 }
 .sidebar-list {
-  height: 60px;
+  margin-left: 3px;
   ul {
-    text-align: end;
-    border-left: 2px;
+    text-align: start;
     border-color: $color-one;
     height: 100%;
     padding: 0;
     margin: 0;
+    border-bottom: 2px;
+    border-color: $color-one;
+    padding: 0;
+    line-height: 2.6;
+    margin-bottom: 10px;
     li {
-      font-family: $font-family-one;
       display: inline-flex;
       height: 100%;;
       text-decoration: none;
       color: $color-one;
-      text-align: left;
-      align-items: center;
-      padding: 12px;
+      text-align: center; 
+      padding-left: 12px;
       font-family: $font-family-one;
       border-left: 2px solid $color-five;
+      border-left: 2px solid transparent;
       i {
         display: flex;
         align-items: center;
         vertical-align: -webkit-baseline-middle;
         padding: 10px;
+        padding-right: 15px;
       }
       .span-one {
         font-size: 12px;  
@@ -86,34 +149,14 @@ nav.topbar-list {
       span {
         display: flex;
         align-items: center;
-        font-size: 18px;
       }
-    }
-  }
-}
-nav.sidebar-list {
-  margin-left: 3px;
-  ul {
-    border-bottom: 2px;
-    border-color: $color-one;
-    padding: 0;
-    
-    li {
-      text-decoration: none;
-      color: $color-one;
-      font-size: 15px;
-      text-align: left;
-      padding: 12px;
-      font-family: $font-family-one;
-      border-left: 2px solid transparent;
-      i {
-        padding-right: 15px;
-      }
+      
     }
     li:hover {
       color: $color-titles; 
       background-color: #282828;
       border-left: 4px solid $color-three;
+      width: 100%;
     } 
   }
 }
@@ -147,13 +190,4 @@ transform: translateY(13px);
     font-size: 15px;
     margin-left: 10px;
   }
-}
-.button-refresh {
-  align-items: center;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  color: $color-titles;
-  background-color: $color-three;
 }
