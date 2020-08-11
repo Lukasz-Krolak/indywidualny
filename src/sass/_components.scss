@@ -49,6 +49,30 @@
     padding-left: 15px;
   }
 }
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-links {
+  justify-content: center;
+  display: flex;
+  .tab-icon{
+    text-align: right;
+  }
+}
+.button-one {
+  justify-content: center;
+  background-color: $color-three;
+  border-radius: 2px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: $color-titles;
+  font-size: 20px;
+  margin: 20px;
+}
 .chart-title {
   border: none;
   font-size: 15px;
@@ -98,12 +122,12 @@
   color: $color-titles;
   background-color: $color-three;
   margin-left: 10px;
+  position: relative;
   i {
-    // position: absolute;
-    display: flex;
-    align-items: center;
-    vertical-align: -webkit-baseline-middle;
-    padding: 10px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
   }
 }
 .just{

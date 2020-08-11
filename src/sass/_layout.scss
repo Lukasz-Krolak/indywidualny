@@ -1,10 +1,8 @@
 //sass/_layout.scss – plik z gridem oraz domyślnymi klasami pomocniczymi dla niego,
 body {
   font-family: $font-family-one;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
-}
-.border {
   border-color: $color-five;
 }
 i {
@@ -35,6 +33,7 @@ li {
 }
 .chart {
   width: 80%;
+  transform: translateX(10%);
 }
 .user h3 {
   color: $color-one;
@@ -52,6 +51,7 @@ li {
   background: $color-titles;
   width: calc(100% - 188px);
   left: 188px;
+  z-index: 6;
 }
 .avatar-image {
   vertical-align: middle;
@@ -80,6 +80,50 @@ li {
   width: calc(100% - 188px); 
   margin-left: 188px;
   margin-top: 75px;
+}
+table {
+  width: 100%;
+  height: auto;
+  color: $color-one;
+  display: flex;
+  justify-content: space-between;
+  tbody {
+    width: 70%;
+    border-bottom: 1px solid $color-five;
+  }
+  tr {
+    height: auto;
+    border-top: 1px solid $color-five;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    td {
+      width: 33%;
+      text-align: left;
+      top: 50%;
+      transform: translateY(-50%, -50%);
+      padding: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: $color-six;
+    }
+    .tab-icon {
+      padding:10px;
+      opacity: 0;
+    }
+    i {
+      color: $color-one;
+    }
+    i:hover {
+      color: $color-three;
+    }
+  }
+  tr:hover {
+    opacity: 100%;
+    background: $color-seven;
+  }
 }
 .general {
   box-shadow: 0px 0px 20px 0px $color-shadow;
