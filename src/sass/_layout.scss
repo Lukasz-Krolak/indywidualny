@@ -4,6 +4,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   border-color: $color-five;
+  width: 100%;
 }
 i {
   font-family: 'Glyphter';
@@ -35,12 +36,6 @@ li {
   width: 80%;
   transform: translateX(10%);
 }
-.user h3 {
-  color: $color-one;
-  font-size: 15px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
 
 .topbar {
   border-bottom: 2px solid $color-five;
@@ -53,18 +48,23 @@ li {
   left: 188px;
   z-index: 6;
 }
-.avatar-image {
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
+
+.control {
+  left: 50px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .user {
+  width: 100%;
   border-top: 2px solid;
   border-color: $color-one;
   font-family: $font-family-one;
   color: $color-four;
+  text-align: center;
+  display: inline-block;
   h3 {
     color: $color-one;
     font-size: 15px;
@@ -72,7 +72,7 @@ li {
   }
   span {
     font-size: 15px;
-    margin-left: 10px;
+    color: $color-six;
   }
 }
 //content

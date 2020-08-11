@@ -4,7 +4,13 @@
 * {
   box-sizing: border-box;
 }
-
+.notification {
+  position: relative;
+  .control.orange {
+    background-color: $color-three;
+    position: absolute;
+  }
+}
 .container {
   width: 100%;
   max-width: 1170px;
@@ -111,6 +117,31 @@
       border-left: 2px solid $color-five;
       padding-left: 15px;
     }
+  }
+}
+.label {
+  display: ;
+  position: relative;
+  .avatar-image {
+    width: 40px;
+    height: 40px; 
+    margin-left: 20px;
+    
+    img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    }
+    .control.green {
+      left: 50px;
+      background-color: green;
+      position: absolute;
+    }
+  }
+  .person {
+    position: absolute;
   }
 }
 .button-refresh {
@@ -242,13 +273,4 @@ transform: translateY(6px);
 }
 .hamburger::after {
 transform: translateY(13px);
-}
-.user h3 {
-  color: $color-one;
-  font-size: 15px;
-  margin-top: 30px;
-  span {
-    font-size: 15px;
-    margin-left: 10px;
-  }
 }
