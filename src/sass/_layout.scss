@@ -111,8 +111,11 @@ table {
       color: $color-six;
     }
     .tab-icon {
-      padding:10px;
+      
       opacity: 0;
+      i {
+        padding: 7px;
+      }
     }
     i {
       color: $color-one;
@@ -122,8 +125,11 @@ table {
     }
   }
   tr:hover {
-    opacity: 100%;
+    opacity: 1;
     background: $color-seven;
+    .tab-icon {
+      opacity: 1;
+    }
   }
 }
 .general {
@@ -144,4 +150,12 @@ table {
   color: $color-titles;
   font-size: 20px;
   display: inline-flex;
+}
+
+
+@media all and (max-width:700px) {
+  nav.topbar-list ul {
+    text-align: center;
+    display: contents;
+  }
 }

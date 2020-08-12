@@ -103,7 +103,6 @@
     border-radius: 2px;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     padding: 10px;
     height: 40px;
     input{
@@ -143,13 +142,17 @@
 }
 nav.topbar-list {
   height: 60px;
+  flex-wrap: wrap;
   ul {
+    background-color: $color-titles;
     text-align: end;
     border-left: 2px;
     border-color: #818181;
-    height: 100%;
+    height: 98%;
     margin: 0;
     li {
+      background-color: $color-titles;
+      
       font-family: $font-family-one;
       display: inline-flex;
       height: 100%;;
@@ -246,15 +249,15 @@ nav.topbar-list {
 }
 .hamburger::before, .hamburger::after {
 content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-border-top: 2px solid $color-one;
-transform: translateY(6px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  border-top: 2px solid $color-one;
+  transform: translateY(6px);
 }
 .hamburger::after {
-transform: translateY(13px);
+  transform: translateY(13px);
 }
 .label {
   position: relative;
@@ -280,5 +283,14 @@ transform: translateY(13px);
     top: 20px;
     transform: translateY(-50%);
     position: absolute;
+  }
+}
+
+@media all and (max-width:700px) {
+  nav.topbar-list {
+    ul {
+      height: 50%;
+      padding: 3px;
+    }
   }
 }
