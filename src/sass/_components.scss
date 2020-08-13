@@ -143,19 +143,19 @@
 nav.topbar-list {
   height: 60px;
   flex-wrap: wrap;
+  background-color: $color-titles;
   ul {
-    background-color: $color-titles;
+
     text-align: end;
     border-left: 2px;
-    border-color: #818181;
+    border-color: $color-one;
     height: 98%;
     margin: 0;
     li {
-      background-color: $color-titles;
-      
+
       font-family: $font-family-one;
       display: inline-flex;
-      height: 100%;;
+      height: 100%;
       text-decoration: none;
       color: $color-one;
       text-align: left;
@@ -170,7 +170,7 @@ nav.topbar-list {
         vertical-align: -webkit-baseline-middle;
         padding: 10px;
       }
-      .span-one {
+      .span.one {
         font-size: 12px;  
       }
       span {
@@ -291,6 +291,83 @@ content: '';
     ul {
       height: 50%;
       padding: 3px;
+      background-color: $color-titles;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        border-bottom: 1px solid $color-five;
+        width: 50%;
+        padding-left: 0 0 0 3px;
+        span {
+          font-size: 10px;
+        }
+        i {
+          font-size: 13px;
+          padding: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  .title.container-fluid {
+    margin: 3px;
+  }
+  p.just {
+    margin-left: 13px;
+    width: 60px;
+  }
+  .hamburger {
+    margin-left: 0px;
+  }
+  .user {
+    font-size: 12px;
+    .person {
+      position: relative;
+    } 
+  }
+  .callendar {
+    .date-input {
+      width: 100%;
+      input {
+        display: contents;
+      }
+    }
+    .button-refresh {
+      margin-top: 10px;
     }
   }
 }
+// .callendar {
+//   padding: 50px 10px;
+//   border-bottom: 1px solid $color-five;
+//   justify-content: center;
+//   display: flex;
+//   flex-wrap: wrap;
+//   i {
+//     display: flex;
+//     align-items: center;
+//     vertical-align: -webkit-baseline-middle;
+//     padding: 10px;
+//   }
+//   .icon-calendar {
+//     color: $color-one;
+//     transform: translateY(8%);
+//     z-index: -1;
+//   }
+//   .date-input {
+//     border: 1px solid $color-five;
+//     border-radius: 2px;
+//     justify-content: center;
+//     display: flex;
+//     padding: 10px;
+//     height: 40px;
+//     input{
+//       border: none;
+//       font-size: 15px;
+//     }
+//     .second-date {
+//       border-left: 2px solid $color-five;
+//       padding-left: 15px;
+//     }
+//   }
+// }

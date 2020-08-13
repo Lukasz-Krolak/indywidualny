@@ -78,7 +78,7 @@ li {
 }
 //content
 .con {
-  width: calc(100% - 188px); 
+  width: calc(98% - 188px); 
   margin-left: 188px;
   margin-top: 75px;
 }
@@ -137,10 +137,6 @@ table {
   width: 100%;
   margin: 20px;
 }
-.content {
-  width: calc(100% - 188px);
-  margin-left: 188px;
-}
 .container-fluid {
   width: 100%;
   margin-left: 17px;
@@ -157,5 +153,42 @@ table {
   nav.topbar-list ul {
     text-align: center;
     display: contents;
+  }
+  .topbar {
+    width: calc(98% - 100px);
+    left: 100px;
+  }
+  .con {
+    width: calc(98% - 100px);
+    margin-left: 100px
+  }
+  .sidebar {
+    width: 100px;
+    font-size: small;
+  }
+  .sidebar-list {
+    ul {
+      li {
+        padding-left: 0;
+        span {
+          font-size: 10px;
+        }
+        i {
+          font-size: 13px;
+          padding: 1px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  table {
+ table-layout: fixed;
+      tr {
+
+      display: inline-grid;
+      font-size: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
