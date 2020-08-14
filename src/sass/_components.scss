@@ -309,8 +309,26 @@ content: '';
       }
     }
   }
+  .sidebar-list {
+    ul {
+      li {
+        padding-left: 0;
+        span {
+          font-size: 10px;
+        }
+        i {
+          font-size: 13px;
+          padding: 1px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
   .title.container-fluid {
     margin: 3px;
+  }
+  .form-title {
+    font-size: 13px;
   }
   p.just {
     margin-left: 13px;
@@ -321,9 +339,18 @@ content: '';
   }
   .user {
     font-size: 12px;
+    h3 {
+      font-size: 13px;
+    }
     .person {
       position: relative;
     } 
+  }
+  .textarea {
+    span {
+      flex: 100%;
+      justify-content: start;
+    }
   }
   .callendar {
     .date-input {
@@ -336,38 +363,10 @@ content: '';
       margin-top: 10px;
     }
   }
+  .notification {
+    .control.orange {
+      top: 2px;
+      left: 25px;
+    }
+  }
 }
-// .callendar {
-//   padding: 50px 10px;
-//   border-bottom: 1px solid $color-five;
-//   justify-content: center;
-//   display: flex;
-//   flex-wrap: wrap;
-//   i {
-//     display: flex;
-//     align-items: center;
-//     vertical-align: -webkit-baseline-middle;
-//     padding: 10px;
-//   }
-//   .icon-calendar {
-//     color: $color-one;
-//     transform: translateY(8%);
-//     z-index: -1;
-//   }
-//   .date-input {
-//     border: 1px solid $color-five;
-//     border-radius: 2px;
-//     justify-content: center;
-//     display: flex;
-//     padding: 10px;
-//     height: 40px;
-//     input{
-//       border: none;
-//       font-size: 15px;
-//     }
-//     .second-date {
-//       border-left: 2px solid $color-five;
-//       padding-left: 15px;
-//     }
-//   }
-// }

@@ -150,6 +150,9 @@ table {
 
 
 @media all and (max-width:700px) {
+  body {
+    font-size: 10px;
+  }
   nav.topbar-list ul {
     text-align: center;
     display: contents;
@@ -166,29 +169,15 @@ table {
     width: 100px;
     font-size: small;
   }
-  .sidebar-list {
-    ul {
-      li {
-        padding-left: 0;
-        span {
-          font-size: 10px;
-        }
-        i {
-          font-size: 13px;
-          padding: 1px;
-          padding-right: 5px;
-        }
-      }
-    }
-  }
-  table {
- table-layout: fixed;
-      tr {
 
-      display: inline-grid;
-      font-size: 10px;
-      display: flex;
-      flex-wrap: wrap;
+  table {
+    table-layout: fixed;
+    tr {
+      align-items: center;
+      td {
+        width: 100%;
+        align-items: center;
+      }
     }
   }
 }
