@@ -17,7 +17,7 @@ li {
   width: 100%;
   overflow-x: auto;
 }
-.scroll-wrapper table {
+.scroll-wrapper table .chart {
   width: 100%;
   max-width: 100%;
 }
@@ -69,8 +69,6 @@ table {
   width: 100%;
   height: auto;
   color: $color-one;
-  display: flex;
-  justify-content: space-between;
   tbody {
     width: 70%;
     border-bottom: 1px solid $color-five;
@@ -128,15 +126,17 @@ table {
 .title {
   color: $color-titles;
   font-size: 20px;
-  display: inline-flex;
+  display: flex;
 }
 
 
-@media all and (max-width:700px) {
+@media all and (max-width:768px) {
   body {
     font-size: 10px;
   }
-
+  .chart {
+    width: 100%;
+  }
   .topbar {
     width: calc(98% - 100px);
     left: 100px;
@@ -151,7 +151,6 @@ table {
   }
 
   table {
-    table-layout: fixed;
     tr {
       align-items: center;
       td {

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="images/icons/css/glyphter.css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;357;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,12 +15,22 @@
     <p class="just">Just do it</p>
     <button class="hamburger" data-target="#sidebar.menu" date-toggle="collapse" aria-expanded="true"></button>
   </header>
-  <div class="sidebar col-sm-2">
+  <div>
+    <nav class="topbar-list-mobile">
+      <ul>
+        <li><i class="icon-wallet"></i><span>$1,500.00</span> <i class="icon-arrow-down-small"></i></li>
+        <li class="notification"><i class="icon-notification"></i><span class="control orange"></span> </span></li>
+        <li><i class="icon-profile"></i><span class="span one">Leonardo Dicaprio</span></li>
+        <li><i class="icon-quit"></i></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menu" class="sidebar col-sm-2">
     <header class="title container-fluid ">
       <p class="just">Just do it</p>
       <button class="hamburger"></button>
     </header>
-    <nav class="sidebar-list menu" id="menu">
+    <nav class="sidebar-list">
       <ul>
         <li><i class="icon-general"></i><span>General</span></li>
         <li><i class="icon-details"></i><span>Details</span></li>
@@ -42,16 +51,6 @@
         <span class="person">Mikhael E</span>
       </div>
     </div>
-  </div>
-  <div>
-    <nav class="topbar-list-mobile">
-      <ul>
-        <li><i class="icon-wallet"></i><span>$1,500.00</span> <i class="icon-arrow-down-small"></i></li>
-        <li class="notification"><i class="icon-notification"></i><span class="control orange"></span> </span></li>
-        <li><i class="icon-profile"></i><span class="span one">Leonardo Dicaprio</span></li>
-        <li><i class="icon-quit"></i></li>
-      </ul>
-    </nav>
   </div>
   <div class="topbar col-sm-10"  >
     <nav class="topbar-list">
@@ -84,7 +83,7 @@
             <span><p class="left">Net deposit</p><p>564</p></span>
             <span><p class="left">Turn over</p><p>432</p></span>
       </div>
-      <div class="chart">
+      <div class="chart scroll-wrapper">
         <p class="chart-title">Earning chart</p>
         <canvas id="myChart" ></canvas>
       </div>
@@ -96,30 +95,32 @@
       <div class="links">
         <button class="button-one">+ add new</button>
       </div>
-      <table class="table-links">
-          
-        <tr>
-          <td><span>Home Page</span></td> <td><a href="#">http://www.homepage.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Currently offer</span></td> <td><a href="#">http://www.currently.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Blurpix</span></td> <td><a href="#">http://www.blurpix.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Your site</span></td> <td><a href="#">http://www.yoursite.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Google</span></td> <td><a href="#">http://www.google.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Facebook</span></td> <td><a href="#">http://www.facebook.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-        <tr>
-          <td><span>Dashboard</span></td> <td><a href="#">http://www.dashboard.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
-        </tr>
-      </table>
+      <div class="scroll-wrapper">
+        <table class="table-links">
+            
+          <tr>
+            <td><span>Home Page</span></td> <td><a href="#">http://www.homepage.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Currently offer</span></td> <td><a href="#">http://www.currently.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Blurpix</span></td> <td><a href="#">http://www.blurpix.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Your site</span></td> <td><a href="#">http://www.yoursite.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Google</span></td> <td><a href="#">http://www.google.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Facebook</span></td> <td><a href="#">http://www.facebook.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Dashboard</span></td> <td><a href="#">http://www.dashboard.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+        </table>
+      </div>
       <div class="links">
         <button class="button-one">+ add new</button>
       </div>

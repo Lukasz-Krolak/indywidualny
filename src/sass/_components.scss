@@ -104,7 +104,7 @@
     justify-content: center;
     display: flex;
     padding: 10px;
-    height: 40px;
+    height: 20%;
     input{
       border: none;
       font-size: 15px;
@@ -144,6 +144,7 @@ nav.topbar-list {
   height: 60px;
   flex-wrap: wrap;
   background-color: $color-titles;
+  border-bottom: 2px solid $color-five;
   ul {
     text-align: end;
     border-left: 2px;
@@ -281,6 +282,9 @@ nav.topbar-list {
   margin-top: 22px; 
   margin-left: 50px;
 }
+.haburger:hover {
+  border-radius: 50%;
+}
 .hamburger::before, .hamburger::after {
 content: '';
   position: absolute;
@@ -337,6 +341,13 @@ content: '';
     color: $color-six;
   }
 }
+.button-one:hover {
+  background-color: $color-one;
+}
+.button-refresh:hover {
+  background-color: $color-one;
+
+}
 @media all  and (max-width:768px) {
   .sidebar-list {
     ul {
@@ -353,10 +364,12 @@ content: '';
       }
     }
   }
-  .title.mobile {
-    width: 30%;
-    background-color: black;
-    opacity: 1;
+  .table-links {
+    justify-content: none;
+    flex-wrap: nowrap;
+    .tab-icon{
+      text-align: right;
+    }
   }
   .title.container-fluid {
     margin: 3px;
@@ -369,6 +382,7 @@ content: '';
     width: 60px;
   }
   .hamburger {
+    top: 10px;
     margin-left: 0px;
   }
   .user {
@@ -381,17 +395,20 @@ content: '';
     } 
   }
   .textarea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 90%;
     span {
       flex: 100%;
-      justify-content: start;
+      justify-content: center;
     }
   }
   .callendar {
     .date-input {
       width: 100%;
-      input {
-        display: contents;
-      }
+      overflow: hidden;
     }
     .button-refresh {
       margin-top: 10px;
@@ -409,19 +426,56 @@ content: '';
   }
 }
 @media all  and (max-width: 480px) {
+  .callendar {
+    .date-input {
+      width: 100%;
+      flex-direction: column;
+      border: 2px solid $color-five;
+      input {
+        border: none;
+        font-size: 15px;
+        text-align: center;
+      }
+      .second-date {
+        border: none;
+        padding: 0;
+      }
+      i {
+        transform: translateX(50%);
+      }
+    }
+  }
   .sidebar {
     opacity: 0;
+    .show {
+      opacity: 1;
+      width: 100%;
+    }
   }
   .topbar-list {
     opacity: 0;
   }
- .title-mobile{
-     opacity: 1
-    } 
+ .title.mobile {
+    opacity: 1;
+    border-bottom-right-radius: 50%;
+    width: 30%;
+    background-color: $color-two;
+    position: fixed;
+  } 
   .topbar-list-mobile {
     opacity: 1;
+    position: fixed;
+    top: 25%;
+    height: 100vh;
+    li:hover {
+      background-color: $color-five;
+    }
   }
   .just {
     background-color: black;
+  }
+  .con {
+    margin-left: 30%;
+    margin-top: 0;
   }
 }
