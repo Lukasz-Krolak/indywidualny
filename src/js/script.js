@@ -35,8 +35,6 @@ function initChart(){
         backgroundColor: '#71B374',
         borderColor: '#71B374',
         data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
-        // 7
-        hidden: true,
       }]
       
     },
@@ -44,5 +42,10 @@ function initChart(){
   });
   
 }
-
-url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+function toggleMenu(visible) {
+  document.querySelector('.menu').classList.toggle('show', visible);
+}
+document.querySelector('.hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});

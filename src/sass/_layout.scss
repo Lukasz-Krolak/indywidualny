@@ -58,24 +58,7 @@ li {
   z-index: 1;
 }
 
-.user {
-  width: 100%;
-  border-top: 2px solid;
-  border-color: $color-one;
-  font-family: $font-family-one;
-  color: $color-four;
-  text-align: center;
-  display: inline-block;
-  h3 {
-    color: $color-one;
-    font-size: 15px;
-    margin-top: 30px;
-  }
-  span {
-    font-size: 15px;
-    color: $color-six;
-  }
-}
+
 //content
 .con {
   width: calc(98% - 188px); 
@@ -153,10 +136,7 @@ table {
   body {
     font-size: 10px;
   }
-  nav.topbar-list ul {
-    text-align: center;
-    display: contents;
-  }
+
   .topbar {
     width: calc(98% - 100px);
     left: 100px;
@@ -179,5 +159,17 @@ table {
         align-items: center;
       }
     }
+  }
+}
+@media all and (max-width:480px) {
+  .topbar {
+    opacity: 0;
+    
+  }
+  .sidebar {
+    opacity: 0;  
+  }
+  .general {
+    top: 0;
   }
 }
