@@ -57,8 +57,6 @@
 
 .table-links {
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
   .tab-icon{
     text-align: right;
   }
@@ -181,9 +179,6 @@ nav.topbar-list {
     }
   }
 }
-.title.mobile {
-  opacity: 0;
-}
 .notification {
   position: relative;
   .control.orange {
@@ -194,7 +189,7 @@ nav.topbar-list {
   }
 }
 .topbar-list-mobile {
-  opacity: 0;
+  display: none;
   left: 0;
   margin-left: 3px;
   width: 30%;
@@ -279,8 +274,7 @@ nav.topbar-list {
   border-top: 2px solid $color-one;
   background: transparent;
   position: relative;
-  margin-top: 22px; 
-  margin-left: 50px;
+  margin: auto;
 }
 .haburger:hover {
   border-radius: 50%;
@@ -298,29 +292,27 @@ content: '';
   transform: translateY(13px);
 }
 .label {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   .avatar-image {
     width: 40px;
     height: 40px; 
-    margin-left: 20px;
-    
+    position: relative;
     img {
     vertical-align: middle;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    position: relative;
     }
     .control.green {
-      left: 50px;
+      left: 30px;
       background-color: green;
       position: absolute;
     }
   }
   .person {
-    top: 20px;
-    transform: translateY(-50%);
-    position: absolute;
+    padding: 10px;
   }
 }
 .user {
@@ -348,84 +340,10 @@ content: '';
   background-color: $color-one;
 
 }
-@media all  and (max-width:768px) {
-  .sidebar-list {
-    ul {
-      li {
-        padding-left: 0;
-        span {
-          font-size: 10px;
-        }
-        i {
-          font-size: 13px;
-          padding: 1px;
-          padding-right: 5px;
-        }
-      }
-    }
-  }
-  .table-links {
-    justify-content: none;
-    flex-wrap: nowrap;
-    .tab-icon{
-      text-align: right;
-    }
-  }
-  .title.container-fluid {
-    margin: 3px;
-  }
-  .form-title {
-    font-size: 13px;
-  }
-  p.just {
-    margin-left: 13px;
-    width: 60px;
-  }
-  .hamburger {
-    top: 10px;
-    margin-left: 0px;
-  }
-  .user {
-    font-size: 12px;
-    h3 {
-      font-size: 13px;
-    }
-    .person {
-      position: relative;
-    } 
-  }
-  .textarea {
+@media all  and (max-width:560px) {
+  .topbar-list-mobile {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    width: 90%;
-    span {
-      flex: 100%;
-      justify-content: center;
-    }
   }
-  .callendar {
-    .date-input {
-      width: 100%;
-      overflow: hidden;
-    }
-    .button-refresh {
-      margin-top: 10px;
-    }
-  }
-  .notification {
-    .control.orange {
-      top: 2px;
-      left: 25px;
-    }
-  }
-  nav.topbar-list ul {
-    text-align: center;
-    display: contents;
-  }
-}
-@media all  and (max-width: 480px) {
   .callendar {
     .date-input {
       width: 100%;
@@ -445,37 +363,15 @@ content: '';
       }
     }
   }
-  .sidebar {
-    opacity: 0;
-    .show {
-      opacity: 1;
-      width: 100%;
-    }
-  }
-  .topbar-list {
-    opacity: 0;
-  }
- .title.mobile {
-    opacity: 1;
-    border-bottom-right-radius: 50%;
-    width: 30%;
-    background-color: $color-two;
-    position: fixed;
-  } 
-  .topbar-list-mobile {
-    opacity: 1;
-    position: fixed;
-    top: 25%;
-    height: 100vh;
-    li:hover {
-      background-color: $color-five;
-    }
-  }
-  .just {
-    background-color: black;
-  }
-  .con {
-    margin-left: 30%;
-    margin-top: 0;
-  }
+  .textarea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 90%;
+    span {
+      flex: 100%;
+      justify-content: center;	
+    }	    
+  }	  
 }

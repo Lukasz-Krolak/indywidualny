@@ -76,9 +76,7 @@ table {
   tr {
     height: auto;
     border-top: 1px solid $color-five;
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 10px;
     td {
       width: 33%;
@@ -130,45 +128,29 @@ table {
 }
 
 
-@media all and (max-width:768px) {
-  body {
-    font-size: 10px;
+@media all and (max-width:560px) {
+  .topbar {
+    display: none;
   }
-  .chart {
+  .sidebar {
+    height: auto;
     width: 100%;
   }
-  .topbar {
-    width: calc(98% - 100px);
-    left: 100px;
+  .sidebar-content {
+    display: none;
+  }
+  .hamburger {
+    margin: 0;
   }
   .con {
-    width: calc(98% - 100px);
-    margin-left: 100px
+    top: 60px;
+    margin: 10%;
+    display: flex;
   }
-  .sidebar {
-    width: 100px;
-    font-size: small;
-  }
-
-  table {
-    tr {
-      align-items: center;
-      td {
-        width: 100%;
-        align-items: center;
-      }
-    }
-  }
-}
-@media all and (max-width:480px) {
-  .topbar {
-    opacity: 0;
-    
-  }
-  .sidebar {
-    opacity: 0;  
-  }
-  .general {
-    top: 0;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
   }
 }

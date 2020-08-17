@@ -42,8 +42,8 @@ function initChart(){
   });
   
 }
-function toggleMenu(visible) {
-  document.querySelector('.menu').classList.toggle('show', visible);
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('show');
 }
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
