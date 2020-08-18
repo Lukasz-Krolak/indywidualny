@@ -86,7 +86,6 @@
   display: flex;
   flex-wrap: wrap;
   i {
-    display: flex;
     align-items: center;
     vertical-align: -webkit-baseline-middle;
     padding: 10px;
@@ -163,7 +162,7 @@ nav.topbar-list {
       border-left: 2px solid $color-five;
       i {
         font-size: 18px;
-        display: flex;
+        // display: flex;
         align-items: center;
         vertical-align: -webkit-baseline-middle;
         padding: 10px;
@@ -172,7 +171,6 @@ nav.topbar-list {
         font-size: 12px;  
       }
       span {
-        display: flex;
         align-items: center;
         font-size: 18px;
       }
@@ -349,6 +347,7 @@ content: '';
       width: 100%;
       flex-direction: column;
       border: 2px solid $color-five;
+      margin: 5px;
       input {
         border: none;
         font-size: 15px;
@@ -359,9 +358,16 @@ content: '';
         padding: 0;
       }
       i {
-        transform: translateX(50%);
+        text-align: center;
       }
     }
+  }
+  .hamburger {
+    margin: auto;
+    margin-right: 40px;
+  }
+  .button-refresh {
+    margin: auto;
   }
   .textarea {
     display: flex;

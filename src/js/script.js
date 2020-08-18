@@ -43,9 +43,10 @@ function initChart(){
   
 }
 function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('show');
+  document.querySelector('.sidebar-content').classList.toggle('show');
 }
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
   toggleMenu();
 });
+console.log('toggle',toggleMenu);
