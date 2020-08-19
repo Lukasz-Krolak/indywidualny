@@ -121,6 +121,7 @@
   color: $color-titles;
   background-color: $color-three;
   margin-left: 10px;
+  margin: 10px;
   position: relative;
   i {
     position: absolute;
@@ -178,42 +179,17 @@ nav.topbar-list {
   }
 }
 .notification {
-  position: relative;
-  .control.orange {
-    background-color: $color-three;
-    position: absolute;
-    top: 15px;
-    left: 35px;
-  }
-}
-.topbar-list-mobile {
-  display: none;
-  left: 0;
-  margin-left: 3px;
-  width: 30%;
-  color: $color-one;
-  ul {
-    padding: 3px;
-    background-color: $color-titles;
-    display: block;
-    flex-wrap: wrap;
-    li {
-      border: 1px solid $color-five;
-      border-radius: 2px;
-      //width: 30%;
-      padding: 5px;
-      display: block;
-      span {
-        font-size: 10px;
-      }
-      i {
-        font-size: 10px;
-        padding: 5px;
-        padding-right: 5px;
-      }
+  i {
+    position: relative;
+    .control.orange {
+      background-color: $color-three;
+      position: absolute;
+      top: 1px;
+      left: 25px;
     }
   }
 }
+
 .sidebar-list {
   margin-left: 3px;
   ul {
@@ -228,7 +204,7 @@ nav.topbar-list {
     line-height: 2.6;
     margin-bottom: 10px;
     li {
-      display: inline-flex;
+      display: flex;
       height: 100%;;
       text-decoration: none;
       color: $color-one;
@@ -274,8 +250,11 @@ nav.topbar-list {
   position: relative;
   margin: auto;
 }
-.haburger:hover {
-  border-radius: 50%;
+.hamburger:focus {
+  background-color: $color-one;
+}
+.hamburger:hover {
+  color: $color-three;
 }
 .hamburger::before, .hamburger::after {
 content: '';
@@ -336,12 +315,11 @@ content: '';
 }
 .button-refresh:hover {
   background-color: $color-one;
-
+}
+.topbar-list-mobile {
+  display: none;
 }
 @media all  and (max-width:570px) {
-  .topbar-list-mobile {
-    display: flex;
-  }
   .callendar {
     .date-input {
       width: 100%;
@@ -380,4 +358,63 @@ content: '';
       justify-content: center;	
     }	    
   }	  
+  .show {
+    display: block;
+    .sidebar-list{
+      ul {
+        li{
+          width: 100%;
+          justify-content: center;
+        } 
+      }
+    }
+    .label {
+      justify-content: center;
+    }
+    .topbar-list-mobile {
+      display: block;
+      background: $color-two;
+      width: 100%;
+      color: $color-one;
+      margin: 0 auto;
+      ul {
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 3px;
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+          span {
+            font-size: 15px;
+            padding: 5px;
+          }
+          i {
+            font-size: 15px;
+            padding: 5px;
+            padding-right: 5px;
+          }
+        }
+        li:hover {
+          color: $color-titles; 
+          background-color: #282828;
+          border-left: 4px solid $color-three;
+          width: 100%;
+        }
+      }
+      .notification {
+        i {
+          position: relative;
+          .control.orange {
+            position: absolute;
+            top: 0;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
 }

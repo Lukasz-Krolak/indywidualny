@@ -69,6 +69,7 @@ table {
   width: 100%;
   height: auto;
   color: $color-one;
+  padding: 20px; 
   tbody {
     width: 70%;
     border-bottom: 1px solid $color-five;
@@ -148,5 +149,12 @@ table {
     margin: auto;
     display: flex;
     width: 100%;
+  }
+  .show {
+    .scroll-wrapper {
+      display: block;
+      height: 100%;
+      overflow-y: auto;
+    }
   }
 }
