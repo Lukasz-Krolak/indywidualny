@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="images/icons/css/glyphter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;357;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="menu" class="sidebar col-sm-2">
+    <header class="title container-fluid ">
+      <p class="just">Just do it</p>
+      <button class="hamburger"  date-toggle="hamburger"></button>
+    </header>
+    <div class="sidebar-content scroll-wrapper">
+      <nav class="sidebar-list">
+        <ul>
+          <li><i class="icon-general"></i><span>General</span></li>
+          <li><i class="icon-details"></i><span>Details</span></li>
+          <li><i class="icon-links"></i><a href="#links"><span>Links</span></a></li>
+          <li><i class="icon-banners"></i><span>Banners</span></li>
+          <li><i class="icon-personaldata"></i><span>Personal data</span></li>
+          <li><i class="icon-payout"></i><span>Payout</span></li>
+          <li><i class="icon-postback"></i><span>Postback</span></li>
+        </ul>
+      </nav>
+      <div class="user">
+        <h3>YOUR MANAGER</h3>
+        <div class="label">
+          <div class="avatar-image">
+            <img src="images\lukasz-krolak.jpg">
+            <span class="control green"> </span>
+          </div>
+          <span class="person">Mikhael E</span>
+        </div>
+      </div>
+      <nav class="topbar-list-mobile">
+        <ul>
+          <li><i class="icon-wallet"></i><span>$1,500.00</span> <i class="icon-arrow-down-small"></i></li>
+          <li class="notification"><i class="icon-notification"><span class="control orange"></span></i></li>
+          <li><i class="icon-profile"></i><span class="span one">Leonardo Dicaprio</span></li>
+          <li><i class="icon-quit"></i></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="topbar col-sm-10"  >
+    <nav class="topbar-list">
+      <ul>
+        <li><i class="icon-wallet"></i><span>$1,500.00</span> <i class="icon-arrow-down-small"></i></li>
+        <li class="notification"><i class="icon-notification"><span class="control orange"></span></i></li>
+        <li><i class="icon-profile"></i><span class="span one">Leonardo Dicaprio</span></li>
+        <li><i class="icon-quit"></i></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="con row">
+    <div class="general col-sm-10">
+      <div class="form-title">
+        <p>GENERAL  STATISTIC</p>
+      </div>
+      <div class="callendar">
+        <div class="date-input">
+          <input type="text" placeholder="16.05.2016">
+          <input class="second-date" type="text" placeholder="16.05.2016">
+          <i class="icon-calendar"></i>
+        </div>
+        <div class="button-refresh">
+          <i class="icon-refresh"></i>
+        </div>
+      </div>
+      <div class="textarea">
+            <span><p class="left">Visit Signups</p><p>124</p></span>
+            <span><p class="left">FTD</p><p>445</p></span>
+            <span><p class="left">Net deposit</p><p>564</p></span>
+            <span><p class="left">Turn over</p><p>432</p></span>
+      </div>
+      <div class="chart scroll-wrapper">
+        <p class="chart-title">Earning chart</p>
+        <canvas id="myChart" ></canvas>
+      </div>
+    </div>
+    <div class="general col-sm-10">
+      <div class="form-title">
+        <a id="links"><p>LINKS</p></a>
+      </div>
+      <div class="links">
+        <button class="button-one">+ add new</button>
+      </div>
+      <div class="scroll-wrapper">
+        <table class="table-links">
+            
+          <tr>
+            <td><span>Home Page</span></td> <td><a href="#">http://www.homepage.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Currently offer</span></td> <td><a href="#">http://www.currently.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Blurpix</span></td> <td><a href="#">http://www.blurpix.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Your site</span></td> <td><a href="#">http://www.yoursite.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Google</span></td> <td><a href="#">http://www.google.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Facebook</span></td> <td><a href="#">http://www.facebook.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td><span>Dashboard</span></td> <td><a href="#">http://www.dashboard.com</a></td> <td class="tab-icon"><i class="icon-links"></i><i class="icon-trash"></i></td>
+          </tr>
+        </table>
+      </div>
+      <div class="links">
+        <button class="button-one">+ add new</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js" type="module"></script>
+</html>
